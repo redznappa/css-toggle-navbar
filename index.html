@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>School Signs for Playgrounds and Nursery </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="pad10">
-        <label for="chkToggle" class="abs right10 pointer transition-all">menu</label>
+        <label for="chkToggle" class="hamburger hamburger--spring abs right10 pointer transition-all">
+                <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                       Menu
+            
+        </label>
         <span class="logo">logo</span>
+      
         <input type="checkbox" id="chkToggle" class="hide"></input>
         <ul class="navbar-menu hide">
             <li><a href="#" class="opacity-0">link</a></li>
@@ -19,6 +27,16 @@
             <li><a href="#" class="opacity-0">link</a></li>  
         </ul>
     </nav>
+    <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+              hamburger.classList.toggle("is-active");
+              // Do something else, like open/close menu
+            });
+          </script>
 </body>
 </html>
 <style>
