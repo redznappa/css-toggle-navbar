@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School Signs for Playgrounds and Nursery </title>
+</head>
+<body>
+    <nav class="pad10">
+        <label for="chkToggle" class="abs right10 pointer transition-all">menu</label>
+        <span class="logo">logo</span>
+        <input type="checkbox" id="chkToggle" class="hide"></input>
+        <ul class="navbar-menu hide">
+            <li><a href="#" class="opacity-0">link</a></li>
+            <li><a href="#" class="opacity-0">link</a></li>
+            <li><a href="#" class="opacity-0">link</a></li>
+            <li><a href="#" class="opacity-0">link</a></li>
+            <li><a href="#" class="opacity-0">link</a></li>  
+        </ul>
+    </nav>
+</body>
+</html>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    /* layout */
+    .hide {
+        visibility: hidden;
+        opacity:0;
+        height: 0;
+        padding: 0;
+        transition: all 0.15s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    }
+  
+    .abs {
+        position: absolute;
+    }
+    .right10 {
+        right: 10px;
+    }
+    .pointer {
+        cursor: pointer;
+    }
+
+    /* colours */
+
+
+    .navbar-menu {
+        list-style-type: none;
+        text-align: center;
+    }
+  
+    .opacity-0{
+        opacity: 0;
+    }
+    #chkToggle:checked + ul.navbar-menu,#chkToggle:checked + ul.navbar-menu a{        
+        visibility:visible;
+        opacity:1;
+        transition-delay:0s;
+        height: auto;
+        padding-top: 10px; 
+    }
+
+    /* padding */
+    .pad10 {
+        padding: 10px;
+    }
+    .pad-t5 {
+        padding-top: 5px;
+    }
+    .pad-r10 {
+        padding-right: 10px;
+    }
+    /* navbar */
+    nav {
+        background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); 
+    }
+
+
+
+</style>
