@@ -1,0 +1,72 @@
+@import 'var.css';
+@import 'hamburger.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.logo {
+  font-family: var(--font-alternative);
+  font-size: var(--large-font);
+}
+a {
+  font-size: var(--normal-font);
+}
+/* layout */
+.hide {
+  visibility: hidden;
+  opacity:0;
+  height: 0;
+  padding: 0;
+  transition: all 0.15s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.abs {
+  position: absolute;
+}
+.right10 {
+  right: 10px;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* colours */
+
+
+.navbar-menu {
+  list-style-type: none;
+  text-align: center;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+#chkToggle:checked + ul.navbar-menu,#chkToggle:checked + ul.navbar-menu a{        
+  visibility:visible;
+  opacity:1;
+  transition-delay:0s;
+  height: auto;
+  padding-top: 10px; 
+}
+
+/* padding */
+.pad10 {
+  padding: 10px;
+}
+.pad-t5 {
+  padding-top: 5px;
+}
+.pad-r10 {
+  padding-right: 10px;
+}
+/* navbar */
+nav {
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); 
+}
+
+
