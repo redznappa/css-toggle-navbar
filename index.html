@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>School Signs for Playgrounds and Nursery </title>
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Schoolbell" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav class="pad10">
+    <nav id="navbar" class="pad10">
         <label for="chkToggle" class="hamburger hamburger--spring abs right10 pointer transition-all">
           <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
@@ -34,6 +34,19 @@
         <li><a href="#">Create an account</a></li>
       </ul>
     </header>
+    <section class="secondary__hero ">
+      <div class="secondary__hero_item secondary__hero_item--1">one</div>
+      <div class="secondary__hero_item secondary__hero_item--2">one</div>
+      <div class="secondary__hero_item secondary__hero_item--3">one</div>
+    </section>
+    <section class="features">
+      <div class="feature_item">
+        some features
+      </div>
+    </section>
+
+
+
     <script>
             // Look for .hamburger
             var hamburger = document.querySelector(".hamburger");
@@ -43,6 +56,21 @@
               hamburger.classList.toggle("is-active");
               // Do something else, like open/close menu
             });
-          </script>
+    
+            // stick nav
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
+            
 </body>
 </html>

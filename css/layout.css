@@ -32,7 +32,17 @@
     .nav-links {
         margin-left: 40px;
     }
-    
+    header {
+        background-position: 0 0%;
+        min-height: 85vh;
+    }
+    header h1 {
+        font-size: 5.4rem;
+    }
+    header a {
+        font-size: var(--normal-font);
+        padding: 8px 16px;
+     }
     
     
 }
