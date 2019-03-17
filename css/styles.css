@@ -9,6 +9,7 @@
   text-decoration: none;
   font-size: 10px;
   font-family: var(--font-normal);
+  list-style-type: none;
 }
 
 .logo {
@@ -17,6 +18,7 @@
 }
 a {
   font-size: var(--normal-font);
+
 }
 
 
@@ -47,5 +49,34 @@ a {
   padding-right: 10px;
 }
 
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  padding-left: 3rem;
+  background: url(img/backToSchool.png) no-repeat;
+  background-size: cover;
+}
+header h1 {
+  display: flex;
+  margin-top: auto;
+  font-size: var(--large-font);
+  color: ghostwhite;
+}
+header ul{
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: auto;
 
+}
 
+header a {
+  background:var(--pink);
+  padding: 8px 16px;
+  border-radius: 18px;
+  margin-right: 1.5rem;
+  color: ghostwhite;
+
+}
