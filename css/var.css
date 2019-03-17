@@ -1,6 +1,7 @@
 :root {
+    --font-normal: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-brand:'Schoolbell', cursive;
     --font-alternative:'Libre Barcode 128 Text', cursive;
     --large-font: 4rem;
-    --normal-font: 1.6rem;
+    --normal-font: 1.8rem;
 }

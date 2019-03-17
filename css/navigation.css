@@ -1,0 +1,24 @@
+/* layout */
+/* navbar */
+nav {
+    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%); 
+  }
+.hide {
+    visibility: hidden;
+    opacity:0;
+    height: 0;
+    padding: 0;
+    transition: all 0.15s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  }
+    .navbar-menu > li a{
+    opacity: 0;
+    }
+  .abs {
+    position: absolute;
+  }
+  .right10 {
+    right: 10px;
+  }
+  .pointer {
+    cursor: pointer;
+  }
