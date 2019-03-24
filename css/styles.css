@@ -24,11 +24,14 @@ a {
   font-size: var(--normal-font);
 
 }
-header, footer, section, article {
+header, footer, section, article,.secondary__hero_item {
   display: flex;
 
 }
-
+/* headings */
+h3{
+  font-size: 2rem;
+}
 
 /* colours */
 
@@ -72,6 +75,7 @@ header {
   min-height: 70vh;
   padding-left: 3rem;
   background: url(img/backToSchool.png) no-repeat;
+  background-color: antiquewhite;
   background-size: cover;
   background-position: 75% 0;
 }
@@ -79,7 +83,7 @@ header h1 {
   display: flex;
   margin-top: auto;
   font-size: var(--large-font);
-  color: ghostwhite;
+  color: var(--green);
   max-width: 72%;
 }
 header ul{
@@ -89,13 +93,19 @@ header ul{
 
 }
 
-header a {
-  background:var(--pink);
+header a,.btn-cta {
+  background:var(--grey);
   padding: 8px 12px;
   border-radius: 18px;
   margin-right: 1.5rem;
-  color: ghostwhite;
+  color: var(--green);
   font-size: 1.4rem;
+}
+.btn-cta {
+  width: 60%;
+}
+a::after {
+  content: " > ";
 
 }
 /* secondary hero */
@@ -104,9 +114,15 @@ header a {
 }
 .secondary__hero_item {
   display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 25vh;
+  justify-content: center;
   
+  
+}
+.secondary__hero_item p {
+  font-size: 1.4rem;
 }
 .secondary__hero_item--1 {
   background: yellow;
